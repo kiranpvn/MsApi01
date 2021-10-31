@@ -1,0 +1,16 @@
+﻿<h1>Html Helpers, Ex-03</h1>
+
+@using (Html.BeginForm())
+{
+    @Html.Label("t1", "Enter Name: ");
+    @Html.TextBox("t1"); <br/>
+    <text>Choose Gender:</text>
+    <br />
+    @Html.RadioButton("gender", "Mr.") <text>Male </text>
+    @Html.RadioButton("gender", "Miss.")<text>Female </text>
+
+
+    <button>Say Hello </button>
+}
+<hr />
+@ViewBag.msg

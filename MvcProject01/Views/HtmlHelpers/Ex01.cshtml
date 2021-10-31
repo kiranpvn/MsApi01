@@ -1,0 +1,21 @@
+﻿<h1>Html Helpers, Ex-01</h1>
+
+@using (Html.BeginForm())
+{
+    @Html.Label("t1", "Enter Name: ");
+    @Html.TextBox("t1");
+<br />
+<button name="b1" value="length">Length </button>
+<button name="b1" value="upper">upper </button>
+<button name="b1" value="lower">lower </button>
+<button name="b1" value="fname">Last Name </button>
+<button name="b1" value="lname">lFirst Name </button>
+
+}
+
+<hr />
+@ViewBag.msg
+<br />
+
+Goto:
+<a asp-action="index">Back to html helpers index</a>

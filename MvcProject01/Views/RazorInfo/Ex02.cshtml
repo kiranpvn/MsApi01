@@ -1,0 +1,16 @@
+﻿<h2>Razor Example-02</h2>
+
+@for (int i = 0; i < 10; i++)
+{
+    <input type="button" value=@i />
+    <input type="text" value=@i /> 
+    <input type="radio"/> @i  
+    <input type="checkbox" /> @i 
+    <br/>
+    
+}
+
+<br />
+
+Goto:
+<a asp-controller="RazorInfo" asp-action="index">Back to Razor info index</a>    

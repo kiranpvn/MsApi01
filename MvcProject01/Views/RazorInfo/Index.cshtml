@@ -1,0 +1,37 @@
+﻿<h1>About Razor View</h1>
+
+<p>
+    Razor is a programmble view engine <br />
+    The view served by ASP.NET MVC project contains view engine, allowed to program <br />
+    The file extension for razor view is .cshtml <br />
+    Razor can be provide using at symbol
+</p>
+
+<ol>
+    <li>Single line razor: Razor statement in one line</li>
+    <li>Multi line razor (code block): Set of C# statements in a block</li>
+</ol>
+
+
+Single line razor Example:
+<br />
+Date: @DateTime.Now.ToLongDateString()
+<br />
+Time: @DateTime.Now.ToLongTimeString()
+<hr />
+
+Multi line razor example:
+<br />
+@{
+    string name = "Kiran";
+    string city = "Hyderabad";
+}
+Name: @name
+<br />
+City: @city
+<br />
+
+Goto:
+<a asp-controller="RazorInfo" asp-action="ex01">Ex-01</a> |
+<a asp-controller="RazorInfo" asp-action="ex02">Ex-02</a> |
+<a asp-controller="RazorInfo" asp-action="ex03">Ex-03</a> 

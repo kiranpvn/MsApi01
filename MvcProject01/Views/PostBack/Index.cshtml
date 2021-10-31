@@ -1,0 +1,22 @@
+﻿<h1>Postback Demo </h1>
+
+<p>Postback is the process of submitting client request to server</p>
+<p>The client input details will be submitted to server via postback</p>
+
+<p>How to postback?</p>
+<p>By clicking on submit button at client, postback takes place</p>
+
+<form method="post" action="/postback/index">
+    <input type="submit" />
+</form>
+<br />
+
+Time: @DateTime.Now.ToLongTimeString()
+<br />
+@ViewBag.msg
+<br />
+
+
+Goto:
+<a asp-action="ex01">Ex-01</a> |
+<a asp-action="ex02">Ex-02</a> 

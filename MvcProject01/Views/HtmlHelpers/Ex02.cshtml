@@ -1,0 +1,23 @@
+﻿<h1>Html Helpers, Ex-02</h1>
+
+@using (Html.BeginForm())
+{
+    @Html.Label("a", "Enter No1: ");
+    @Html.TextBox("a", "", new { type = "number" });
+    <br />
+    @Html.Label("b", "Enter No2: ");
+    @Html.TextBox("b", "", new { type = "number" });
+    <br />
+    <button name="b1" value="add">Add </button>
+    <button name="b1" value="sub">Sub </button>
+    <button name="b1" value="mult">Mult</button>
+    <button name="b1" value="div">Div </button>
+
+}
+
+<hr />
+@ViewBag.msg
+<br />
+
+Goto:
+<a asp-action="index">Back to html helpers index</a>

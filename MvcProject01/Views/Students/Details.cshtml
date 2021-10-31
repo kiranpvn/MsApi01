@@ -1,0 +1,15 @@
+﻿<h1>Student Details </h1>
+@using MvcProject01.Models
+@{
+    StudentModel s = ViewBag.s;
+}
+ID:@s.Id
+<br />
+Student Name:@s.SName
+<br />
+Course:@s.Course
+<br />
+Fee:@s.Fee
+<br />
+
+<a asp-action="index" >Back to index</a>

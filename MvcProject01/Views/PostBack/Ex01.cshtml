@@ -1,0 +1,13 @@
+﻿<h2>Postback Demo, Ex-01</h2>
+
+<form action="/postback/ex01" method="post">
+    <input type="submit" name="b1" value="Accept" /> |
+    <input type="submit" name="b1" value="Reject" />
+</form>
+<br />
+
+@ViewBag.msg
+<br />
+
+Goto:
+<a asp-action="index">Back to index</a>

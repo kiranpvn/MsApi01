@@ -1,0 +1,22 @@
+﻿<h1>HTML Helpers Index View</h1>
+
+<p>These are predefined methods available with MVC.NET Core</p>
+<p>These are used to generate html tags programatically, advantages are below</p>
+
+<ol>
+    <li>Maintain View State</li>
+    <li>Provide Intellisense</li>
+    <li>Bind to ViewBag</li>
+</ol>
+
+@{ Html.BeginForm();}
+<button name="b1">Say Hello</button>
+@{ Html.EndForm();}
+<hr />
+@ViewBag.msg
+<br />
+
+Goto:
+<a asp-action="ex01">Ex01</a> |
+<a asp-action="ex02">Ex02</a> |
+<a asp-action="ex03">Ex03</a> 

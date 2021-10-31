@@ -1,0 +1,21 @@
+﻿@using MvcProject01.Models
+@{ 
+    List<StudentModel> students = ViewBag.students;
+} 
+<h2>List of all Students</h2>
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>ID</th> <th>SName</th><th>Course</th> <th>Fee</th> 
+        </tr>
+    </thead>
+    <tbody>
+        @foreach ( StudentModel s in students)
+            {
+                <tr>
+                    <td>@s.Id</td><td>@s.SName</td><td>@s.Course</td><td>@s.Fee</td>
+                </tr>
+            }
+    </tbody>
+</table>
+<a  asp-action="index" >Back to student index</a>

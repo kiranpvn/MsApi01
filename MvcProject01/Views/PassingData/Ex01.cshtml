@@ -1,0 +1,40 @@
+﻿<h2>Passing Data Demo, Ex-01</h2>
+@{
+    List<string> boys = ViewBag.boys;
+    string[] girls = ViewBag.girls;
+    int c = 1;
+}
+<h2>List of Boys</h2>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+    </tr>
+    @for (int i = 0; i < boys.Count; i++)
+    {
+        <tr>
+            <td>@(i+1)</td>
+            <td>@boys[i]</td>
+        </tr>
+    }
+</table>
+
+
+<h2>List of Guys</h2>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+    </tr>
+    
+    @foreach (string girl in girls)
+    {
+        <tr>
+            <td>@(c++)</td>
+            <td>@girl</td>
+        </tr>
+
+   }
+</table>
+Goto:
+<a asp-action="ex01">Back to passing data demo index</a>

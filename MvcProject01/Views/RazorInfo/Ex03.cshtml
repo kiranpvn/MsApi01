@@ -1,0 +1,27 @@
+﻿<h2>Razor Demo, Ex-03</h2>
+
+@{
+    string[] fruits = new string[] { "Apple", "Banana", "Cherry", "Grapes", "Mango" };
+    List<string> cakes = new List<string> { "Pine Apple Pastry", "Black Forest", "Choclate cake" };
+}
+
+<h2>List of Fruits</h2>
+<ol>
+    @foreach (string fruit in fruits)
+    {
+        <li>@fruit</li>
+    }
+</ol>
+
+<h2>List of Cakes</h2>
+<ul>
+    @for (int i = 0; i < cakes.Count; i++)
+    {
+        <li>@cakes[i]</li>
+    }
+</ul>
+
+<br />
+
+Goto:
+<a asp-controller="RazorInfo" asp-action="index">Back to Razor info index</a>    

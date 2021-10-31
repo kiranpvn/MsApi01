@@ -1,0 +1,17 @@
+﻿<h1>Razor Demo, Ex-01</h1>
+
+@{ 
+    string fullName = "Kiran Kumar PVN";
+    string firstName = fullName.Substring(0,fullName.IndexOf(" "));
+    string lastName = fullName.Substring(fullName.LastIndexOf(" ") + 1);
+}
+
+Name: @fullName <br/>
+First Name: @firstName <br/>
+Last Name: @lastName <br/>
+Length of @fullName is @fullName.Length letters 
+
+<br/>
+
+Goto: 
+<a  asp-controller="RazorInfo" asp-action="index">Back to Razor info index</a>    

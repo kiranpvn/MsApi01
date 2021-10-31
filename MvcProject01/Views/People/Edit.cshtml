@@ -1,0 +1,24 @@
+﻿<h1>Person Edit View</h1>
+@{ 
+    PersonModel p = ViewBag.p;
+}
+@using (Html.BeginForm())
+{
+    @Html.Label("id", "Enter Id: ");
+    @Html.TextBox("id", p.Id, new { type = "number" });
+    <br />
+    @Html.Label("pname", "Person Name: ");
+    @Html.TextBox("pname",p.PName);
+    <br />
+    @Html.Label("gender", "Person Gender: ");
+    @Html.TextBox("gender",p.Gender);
+    <br />
+    @Html.Label("age", "Person Age: ");
+    @Html.TextBox("age", p.Age, new { type = "number" });
+    <br />
+    <button>Edit Row</button>
+}
+@ViewBag.msg
+<br />
+
+<a asp-action="index">Back to index</a>

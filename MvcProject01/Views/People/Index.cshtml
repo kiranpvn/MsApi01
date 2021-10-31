@@ -1,0 +1,24 @@
+﻿<h1>List of People</h1>
+@using MvcProject01.Models
+@{ 
+    List<PersonModel> people = ViewBag.people;
+}
+<a asp-action="create" >Create</a>
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>ID</th> <th>Name of the Person</th> <th>Gender</th> <th>Age</th>
+            <th>Operations</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach ( PersonModel p in people) { 
+    <tr>
+        <td>@p.Id</td> <td>@p.PName</td> <td>@p.Gender</td> <td>@p.Age</td>
+        <td>  <a  asp-action="details" asp-route-id=@p.Id >Details</a> |
+              <a  asp-action="edit" asp-route-id=@p.Id >Edit</a>|
+         <a  asp-action="delete" asp-route-id=@p.Id >Delete</a></td>
+    </tr>
+    }
+    </tbody>
+</table>

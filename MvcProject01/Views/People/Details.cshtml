@@ -1,0 +1,15 @@
+﻿<h2>Person Details View</h2>
+
+@{
+    PersonModel p = ViewBag.p;
+}
+ID: @p.Id
+<br />
+Person Name: @p.PName
+<br />
+Gender: @p.Gender
+<br />
+Age: @p.Age
+<br />
+
+<a asp-action="index" >Back to person index</a>

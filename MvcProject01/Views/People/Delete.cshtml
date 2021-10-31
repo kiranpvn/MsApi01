@@ -1,0 +1,22 @@
+﻿<h2>Person Delete View View</h2>
+
+@{
+    PersonModel p = ViewBag.p;
+}
+ID: @p.Id
+<br />
+Person Name: @p.PName
+<br />
+Gender: @p.Gender
+<br />
+Age: @p.Age
+<br />
+
+@using (Html.BeginForm())
+{
+    <input type="hidden" name="id" value=@p.Id /> <br/>
+    <button>Delete</button>
+}
+
+@ViewBag.msg
+<a asp-action="index">Back to person index</a>

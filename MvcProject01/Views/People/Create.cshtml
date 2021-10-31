@@ -1,0 +1,22 @@
+﻿<h1>Person Create View</h1>
+
+@using (Html.BeginForm())
+{
+    @Html.Label("id", "Enter Id: ");
+    @Html.TextBox("id", "", new { type = "number" });
+    <br />
+    @Html.Label("pname", "Person Name: ");
+    @Html.TextBox("pname");
+    <br />
+    @Html.Label("gender", "Person Gender: ");
+    @Html.TextBox("gender");
+    <br />
+    @Html.Label("age", "Person Age: ");
+    @Html.TextBox("age","",new { type = "number" });
+    <br />
+    <button>Add Row</button>
+}
+@ViewBag.msg
+<br/>
+
+<a asp-action="index">Back to index</a>
